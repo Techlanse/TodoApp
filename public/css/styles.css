@@ -1,0 +1,130 @@
+body{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,165,107,1) 35%, rgba(0,212,255,1) 100%);
+}
+.box{
+  max-width:  400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+background-color: #CFD2CF;
+}
+#heading{
+  text-align: center;
+  color:#1D5C63;
+  font-family: cursive;
+}
+.item{
+  min-height: 70px;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #CFD2CF;
+}
+
+.item:last-child{
+  border-bottom: 0;
+}
+
+p{
+  margin:0;
+  padding:20px;
+  font-size:20px;
+  font-weight: 200;
+  font-family: cursive;
+  color:#2B4865;
+}
+
+form.item{
+  text-align: center;
+  margin-left: 20px;
+}
+
+input[type="text"]{
+  width:313px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  height:60px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+button{
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3fdc98;
+  color: #CFD2CF;
+  font-size:30px;
+  padding-bottom: 6px;
+  border-width:0;
+}
+
+.content{
+  padding-top: 30px;
+}
+.nav-item{
+  padding: 20px;
+}
+.waterMark{
+  opacity:0.4;
+  text-align: center;
+  font-size: 4rem;
+  color: #CFD2CF;
+}
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #2B4865;
+}
+input[type="checkbox"] {
+  margin: 10px;
+background:rgba(207, 210, 207, 1);
+-moz-appearance: none;
+
+  /*   color:black;
+-webkit-appearance: none;
+  appearance: none;
+
+    border: black; */
+    /* position: relative; */
+}
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #2B4865;
+}
+.active{
+  background-color: green !important;
+}
+.helpContnt{
+  width:80%;
+  height: 80%;
+  background-color: #CFD2CF;
+padding:50px 30px 30px;
+margin: 50px auto 30px;
+opacity:0.7;
+}
+.helpHead{
+  margin-top: 40px;
+  text-align: center;
+  color: #CFD2CF;
+  font-family: cursive;
+}
+ul{
+  list-style-type: circle;
+}
+li{
+  padding:5px 0;
+  font-size:1.15rem;
+  font-family: cursive;
+}

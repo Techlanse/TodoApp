@@ -1,0 +1,36 @@
+<%- include("partials/header") -%>
+<div class="container-fluid content">
+
+  <h1 class="waterMark"><%= currentDay %></h1>
+
+
+  <!-- heading -->
+  <div class="box" id="heading">
+    <h1><%=listTitle%></h1>
+  </div>
+
+  <!-- items     -->
+  <div class="box">
+
+
+    <% presentItems.forEach(function(item){ %>
+    <form class="" action="/delete" method="post">
+      <div class="item">
+        <input type="checkbox" name="check" value="<%=item._id %>" onChange="this.form.submit()">
+        <p> <%= item.activity %> </p>
+      </div>
+      <input type="hidden" name="custlistTitle" value="<%= listTitle %>"></input>
+    </form>
+    <% }); %>
+
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" value="" placeholder="New Item" autocomplete="off">
+      <button type="submit" name="list" value="<%=listTitle%>">+</button>
+    </form>
+
+  </div>
+</div>
+
+
+<%- include("partials/footer") -%>
